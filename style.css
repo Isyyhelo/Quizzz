@@ -1,0 +1,77 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0; /* Remove margin padrão do body */
+  padding: 0; /* Remove padding padrão do body */
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  text-align: center; /* Mantido para centralizar o conteúdo */
+}
+
+img {
+  max-width: 100%;
+}
+
+input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px; /* Aumentei o padding para melhorar a usabilidade */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Suaviza as bordas do input */
+  box-sizing: border-box; /* Inclui o padding na largura total */
+}
+
+button {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Suaviza as bordas do botão */
+  font-size: 16px; /* Aumenta o tamanho da fonte para melhor legibilidade */
+}
+
+button:hover {
+  background-color: #0056b3; /* Adiciona um efeito de hover para o botão */
+}
+
+#mensagem {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.paragrafo-justificado {
+  text-align: justify;
+}
+
+/* Estilos para o fundo com a animação */
+.fundo {
+  background-image: url('goku.jpg');
+  background-size: cover; /* Para cobrir toda a área da página */
+  background-attachment: fixed; /* Para fixar a imagem no lugar enquanto você rola a página */
+  animation: animacao-mar 10s linear infinite; /* Adiciona uma animação de mar à imagem de fundo */
+}
+
+/* Animação para o fundo */
+@keyframes animacao-mar {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}

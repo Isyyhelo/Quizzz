@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Quem é esse personagem?</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="fundo">
+
+  <div class="container">
+    <header>
+      <h1>Quem é esse personagem?</h1>
+    </header>
+
+    <section>
+      <figure>
+        <img src="pers.png" alt="Imagem do personagem" />
+      </figure>
+
+      <div class="dicas">
+        <p><strong>Dica 1:</strong> Tem cabelo espetado</p>
+        <p><strong>Dica 2:</strong> Seu duo é durão/mau humorado</p>
+        <p><strong>Dica 3:</strong> Tem uma transformação dourada</p>
+      </div>
+
+      <div class="input-container">
+        <label for="resposta">Digite o nome do Personagem:</label>
+        <input type="text" id="resposta" placeholder="Digite o nome do Personagem" aria-label="Campo para digitar o nome do personagem" />
+      </div>
+
+      <div class="button-container">
+        <button onclick="verificarResposta()" aria-label="Verificar resposta">Verificar</button>
+      </div>
+
+      <p id="mensagem" role="status"></p>
+    </section>
+  </div>
+
+  <script src="sketch.js"></script>
+
+</body>
+
+</html>
